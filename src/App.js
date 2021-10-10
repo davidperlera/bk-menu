@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// Componentes funcionales
+// Todos aquellos que pueden escribirse como una funcion de JS,
+// de preferencia una funcion arrow
 
-function App() {
+import Navbar from './Components/Navbar'
+import Menu from './Components/Menu'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Navbar />
+      <Menu />
     </div>
   );
 }
 
+// Los componentes siempre deben de exportarse para trabajar con ellos
+// en otras ubicaciones
 export default App;
